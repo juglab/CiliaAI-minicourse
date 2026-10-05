@@ -3,3 +3,7 @@ __pycache__/
 .DS_Store
 denoising/results/
 denoising/denoise-n2v/models/
+
+# Instructor-only material (pivot questions, run sheet); not for students yet
+instructors/
+Claude outputs/
