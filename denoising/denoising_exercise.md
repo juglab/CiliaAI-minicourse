@@ -1,4 +1,6 @@
-# Exercise: denoising a microscopy image with BM3D and Noise2Void
+# Denoising, Part 2 (local track): BM3D and Noise2Void on your laptop
+
+> This is the **local track** of Part 2. It needs the setup from the main [README](../README.md#before-the-course-get-ready). Prefer not to install anything? Do the **Colab track** instead: [open the notebook in Colab](https://colab.research.google.com/github/juglab/CiliaAI-minicourse/blob/main/denoising/n2v_colab.ipynb).
 
 In this exercise you denoise the fluorescence image `data/convollaria.tif` (a section through a *Convallaria* rhizome) with two very different methods and compare what they do:
 
