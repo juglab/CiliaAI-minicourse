@@ -7,3 +7,8 @@ denoising/denoise-n2v/models/
 # Instructor-only material (pivot questions, run sheet); not for students yet
 instructors/
 Claude outputs/
+
+# Denoising Part 3: students' results and the generated figures stay local
+denoising/benchmark/output/
+denoising/benchmark/submissions/*
+!denoising/benchmark/submissions/README.md

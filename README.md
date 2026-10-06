@@ -155,6 +155,10 @@ Now do it again, step by step, and understand what happens. Choose one of two tr
 
 In Colab you upload the image `data/convollaria.tif` from your course folder; the notebook explains how. The install step at the top of the notebook takes several minutes, so we will ask you to start it early.
 
+#### Part 3: how close did we get? (together, after Part 2)
+
+Now we reveal a clean, low-noise version of the image and compare all your results with it: visually, and with two numbers (PSNR and SSIM). Instructions: [`denoising/benchmark/README.md`](denoising/benchmark/README.md).
+
 #### Bonus: classical denoising in Fiji and napari
 
 Curious how the classic filters (Gaussian, median, bilateral, total variation, ...) compare to Noise2Void on the same image? Have a look at the gallery in [`denoising/bonus_classical_denoising/`](denoising/bonus_classical_denoising/). Every Fiji example comes with a small macro, so you can rerun it and play with the settings. This is not part of the exercise, just something to explore if you have time or are curious.
@@ -193,7 +197,8 @@ CiliaAI-minicourse/
 ├── slides/
 │   └── 20261007_Jug_CiliaConnectWorkshop_Day1.pdf   Wednesday afternoon
 ├── data/
-│   └── convollaria.tif        example image (2D, 16-bit, 1024 × 1024)
+│   ├── convollaria.tif        example image (2D, 16-bit, 1024 × 1024)
+│   └── convollaria-clean.tif  low-noise version of it (for Part 3)
 └── denoising/
     ├── denoising_challenge.md Part 1: solve it with AI
     ├── CAREamics_Noise2Void_2D_ZeroCostDL4Mic.ipynb  Part 2, Colab track
@@ -201,6 +206,7 @@ CiliaAI-minicourse/
     ├── compare_results.py     side-by-side comparison figure
     ├── denoise-bm3d/          BM3D environment + script
     ├── denoise-n2v/           Noise2Void environment + script
+    ├── benchmark/             Part 3: compare all results with the clean image
     └── bonus_classical_denoising/  gallery of classical filters + Fiji macros
 ```
 
