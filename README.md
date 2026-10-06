@@ -18,7 +18,7 @@ Material for the hands-on part of the Cilia-AI / CiliaConnect mini-course on ima
 - [Exercises](#exercises)
   - [Wednesday: denoising, in three parts](#wednesday-denoising-in-three-parts)
     - [Part 1: solve it with AI (about 30 minutes)](#part-1-solve-it-with-ai-about-30-minutes)
-    - [Part 2: a clean restart (about 30 minutes)](#part-2-a-clean-restart-about-30-minutes)
+    - [Part 2: a clean restart](#part-2-a-clean-restart)
     - [Part 3: how close did we get? (together, after Part 2)](#part-3-how-close-did-we-get-together-after-part-2)
     - [Bonus: classical denoising in Fiji and napari](#bonus-classical-denoising-in-fiji-and-napari)
 - [During the course: getting updates](#during-the-course-getting-updates)
@@ -165,7 +165,7 @@ At the end it prints a summary. If it says *"Everything works"*, you are ready. 
 
 Denoise a microscopy image with whatever AI help you like. Instructions: [`denoising/denoising_challenge.md`](denoising/denoising_challenge.md).
 
-#### Part 2: a clean restart (about 30 minutes)
+#### Part 2: a clean restart
 
 Now do it again, step by step, and understand what happens. Choose one of two tracks:
 
