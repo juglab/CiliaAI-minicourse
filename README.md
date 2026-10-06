@@ -18,6 +18,8 @@ Detailed timing is announced on site.
 - Hands-on: the [denoising exercise](#exercises), in two parts
 - What was your experience? (discussion)
 
+**Slides** of the Wednesday afternoon: [20261007_Jug_CiliaConnectWorkshop_Day1.pdf](slides/20261007_Jug_CiliaConnectWorkshop_Day1.pdf) (PDF, 12 MB).
+
 **Thursday, 8 October**
 
 - Recap: what is the right tool for the job? What should I learn? (FJ, NJY)
@@ -153,6 +155,10 @@ Now do it again, step by step, and understand what happens. Choose one of two tr
 
 In Colab you upload the image `data/convollaria.tif` from your course folder; the notebook explains how. The install step at the top of the notebook takes several minutes, so we will ask you to start it early.
 
+#### Bonus: classical denoising in Fiji and napari
+
+Curious how the classic filters (Gaussian, median, bilateral, total variation, ...) compare to Noise2Void on the same image? Have a look at the gallery in [`denoising/bonus_classical_denoising/`](denoising/bonus_classical_denoising/). Every Fiji example comes with a small macro, so you can rerun it and play with the settings. This is not part of the exercise, just something to explore if you have time or are curious.
+
 More exercises will be added. Each one lives in its own folder and comes with step-by-step instructions.
 
 ## During the course: getting updates
@@ -181,7 +187,11 @@ Your own new files and all results in `denoising/results/` are never touched by 
 ```text
 CiliaAI-minicourse/
 ├── README.md                  this file
+├── LICENSE                    CC BY 4.0 (texts, slides, images, data)
+├── LICENSE-CODE               MIT (scripts, notebook, macros)
 ├── check_setup.py             run this before the course
+├── slides/
+│   └── 20261007_Jug_CiliaConnectWorkshop_Day1.pdf   Wednesday afternoon
 ├── data/
 │   └── convollaria.tif        example image (2D, 16-bit, 1024 × 1024)
 └── denoising/
@@ -190,5 +200,19 @@ CiliaAI-minicourse/
     ├── denoising_exercise.md  Part 2, local track
     ├── compare_results.py     side-by-side comparison figure
     ├── denoise-bm3d/          BM3D environment + script
-    └── denoise-n2v/           Noise2Void environment + script
+    ├── denoise-n2v/           Noise2Void environment + script
+    └── bonus_classical_denoising/  gallery of classical filters + Fiji macros
 ```
+
+## License
+
+You are welcome to reuse this material, for example in your own teaching.
+
+- **Texts, slides, images and data** are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE): you may share and adapt them for any purpose, as long as you give appropriate credit (for example: "CiliaAI mini-course, Florian Jug et al., https://github.com/juglab/CiliaAI-minicourse").
+- **Code** (Python scripts, the Jupyter notebook and the Fiji macros) is licensed under the [MIT License](LICENSE-CODE), the more common choice for software.
+
+Exceptions:
+
+- Figures and screenshots by others that appear in the slides remain under their original licenses; their sources are credited on the slides.
+- The napari screenshots in `denoising/bonus_classical_denoising/` are by Robert Haase (BSD-3-Clause), see [`SOURCES.md`](denoising/bonus_classical_denoising/SOURCES.md).
+- The Colab notebook is adapted from the [ZeroCostDL4Mic](https://github.com/HenriquesLab/ZeroCostDL4Mic) Noise2Void notebook (MIT License).
