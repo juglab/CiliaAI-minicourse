@@ -10,5 +10,6 @@ Claude outputs/
 
 # Denoising Part 3: students' results and the generated figures stay local
 denoising/benchmark/output/
+data/convollaria-clean.tif
 denoising/benchmark/submissions/*
 !denoising/benchmark/submissions/README.md

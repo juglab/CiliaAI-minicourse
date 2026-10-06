@@ -1,6 +1,6 @@
 # Denoising, Part 3: how close did we get?
 
-In Parts 1 and 2 nobody could say which result was *right*, because we had no noise-free version of the image. Now we do: [`data/convollaria-clean.tif`](../../data/convollaria-clean.tif) is a low-noise image of exactly the same field of view. Real experiments almost never have such a reference, which is why we kept it hidden until now.
+In Parts 1 and 2 nobody could say which result was *right*, because we had no noise-free version of the image. Now we do: `data/convollaria-clean.tif` is a low-noise image of exactly the same field of view. Real experiments almost never have such a reference. To not spoil Parts 1 and 2, it is not on the main branch of this repository but on a separate branch called [`solution`](https://github.com/juglab/CiliaAI-minicourse/tree/solution). The script below downloads it from there automatically.
 
 In this part you compare all your results with the clean image, visually and with two numbers.
 
@@ -26,7 +26,7 @@ TIFF works best. PNG and JPG are accepted too, but 8-bit formats round away info
 
 ## Step 2: Run the comparison
 
-You need the clean image. If `data/convollaria-clean.tif` is missing, update the course material first (`git pull`, or download the ZIP again).
+The first time you run the script, it downloads the clean image from the `solution` branch and saves it as `data/convollaria-clean.tif` (2 MB, so you need internet once).
 
 **Local track** (uv installs everything the script needs on the first run):
 
@@ -73,7 +73,7 @@ Here is an example, made with five quick classical filters instead of your resul
 
 ![Example scores](example/example_scores.png)
 
-Notice that the ranking is not obvious: the strong Gaussian blur barely beats doing nothing in PSNR, and the median filter scores best in PSNR but not in SSIM. Your own results will look different.
+Notice that the ranking is not obvious: the strong Gaussian blur barely beats doing nothing in PSNR, and the median filter scores best in PSNR but not in SSIM. Your own results will look different. The matching picture with all images and error maps is on the [`solution` branch](https://github.com/juglab/CiliaAI-minicourse/blob/solution/denoising/benchmark/example/example_images.png) (it shows the clean image, so look at it only after Part 2).
 
 ## Discuss
 

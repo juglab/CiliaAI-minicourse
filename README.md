@@ -197,8 +197,7 @@ CiliaAI-minicourse/
 ├── slides/
 │   └── 20261007_Jug_CiliaConnectWorkshop_Day1.pdf   Wednesday afternoon
 ├── data/
-│   ├── convollaria.tif        example image (2D, 16-bit, 1024 × 1024)
-│   └── convollaria-clean.tif  low-noise version of it (for Part 3)
+│   └── convollaria.tif        example image (2D, 16-bit, 1024 × 1024)
 └── denoising/
     ├── denoising_challenge.md Part 1: solve it with AI
     ├── CAREamics_Noise2Void_2D_ZeroCostDL4Mic.ipynb  Part 2, Colab track

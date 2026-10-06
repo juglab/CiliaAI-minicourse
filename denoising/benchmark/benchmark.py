@@ -19,7 +19,8 @@ Usage (from the top folder of the course material):
 
 Options:
     --folder PATH   folder with your results (default: denoising/benchmark/submissions)
-    --clean PATH    clean reference image   (default: data/convollaria-clean.tif)
+    --clean PATH    clean reference image   (default: data/convollaria-clean.tif,
+                    downloaded from the 'solution' branch on the first run)
 
 Reads   all .tif / .tiff / .png / .jpg files in the folder
 Writes  denoising/benchmark/output/scores.png   PSNR and SSIM of every result
@@ -28,6 +29,7 @@ Writes  denoising/benchmark/output/scores.png   PSNR and SSIM of every result
 """
 import argparse
 import csv
+import urllib.request
 from pathlib import Path
 
 import numpy as np
@@ -46,6 +48,11 @@ CLEAN = ROOT / "data" / "convollaria-clean.tif"
 SUBMISSIONS = HERE / "submissions"
 OUTPUT = HERE / "output"
 EXTENSIONS = {".tif", ".tiff", ".png", ".jpg", ".jpeg"}
+
+# The clean image is not on the main branch (it would spoil Parts 1 and 2).
+# It lives on the 'solution' branch and is downloaded from there when needed.
+CLEAN_URL = ("https://raw.githubusercontent.com/juglab/CiliaAI-minicourse/"
+             "solution/data/convollaria-clean.tif")
 
 # Crops shown at 1:1 in images.png (y, x, size). Change them to look elsewhere!
 CROPS = {
@@ -200,10 +207,17 @@ def main():
     ap.add_argument("--clean", type=Path, default=CLEAN)
     args = ap.parse_args()
 
+    if not args.clean.exists() and args.clean == CLEAN:
+        print(f"Downloading the clean reference image from the 'solution' branch ...")
+        try:
+            with urllib.request.urlopen(CLEAN_URL, timeout=60) as r:
+                data = r.read()
+            CLEAN.write_bytes(data)
+        except Exception as e:
+            raise SystemExit(f"Could not download {CLEAN_URL}\n({e})\n"
+                             f"Download it in your browser and save it as {CLEAN}.")
     if not args.clean.exists():
-        raise SystemExit(f"Clean reference not found: {args.clean}\n"
-                         "It is published after Part 2. Run 'git pull' (or download the "
-                         "course material again) and try once more.")
+        raise SystemExit(f"Clean reference not found: {args.clean}")
     if not args.folder.is_dir():
         raise SystemExit(f"Folder not found: {args.folder}")
 
