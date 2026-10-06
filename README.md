@@ -4,6 +4,27 @@ Material for the hands-on part of the Cilia-AI / CiliaConnect mini-course on ima
 
 **Before the course,** please choose how you want to work (in the browser or on your own laptop) and get ready as described in [Before the course: get ready](#before-the-course-get-ready).
 
+**Contents**
+
+- [Program](#program)
+- [Before the course: get ready](#before-the-course-get-ready)
+  - [For everyone](#for-everyone)
+  - [Only for the local track](#only-for-the-local-track)
+    - [Step 1: Open a terminal](#step-1-open-a-terminal)
+    - [Step 2: Install git](#step-2-install-git)
+    - [Step 3: Download the course material](#step-3-download-the-course-material)
+    - [Step 4: Install uv](#step-4-install-uv)
+    - [Step 5: Check your setup](#step-5-check-your-setup)
+- [Exercises](#exercises)
+  - [Wednesday: denoising, in three parts](#wednesday-denoising-in-three-parts)
+    - [Part 1: solve it with AI (about 30 minutes)](#part-1-solve-it-with-ai-about-30-minutes)
+    - [Part 2: a clean restart (about 30 minutes)](#part-2-a-clean-restart-about-30-minutes)
+    - [Part 3: how close did we get? (together, after Part 2)](#part-3-how-close-did-we-get-together-after-part-2)
+    - [Bonus: classical denoising in Fiji and napari](#bonus-classical-denoising-in-fiji-and-napari)
+- [During the course: getting updates](#during-the-course-getting-updates)
+- [Repository layout](#repository-layout)
+- [License](#license)
+
 ## Program
 
 Detailed timing is announced on site.
@@ -15,7 +36,7 @@ Detailed timing is announced on site.
 - Classical image analysis: tools (Fiji, napari, Imaris) and community (image.sc, I2K)
 - The deep learning revolution, and what agentic AI has changed since
 - Denoising: a short introduction
-- Hands-on: the [denoising exercise](#exercises), in two parts
+- Hands-on: the [denoising exercise](#exercises), in three parts
 - What was your experience? (discussion)
 
 **Slides** of the Wednesday afternoon: [20261007_Jug_CiliaConnectWorkshop_Day1.pdf](slides/20261007_Jug_CiliaConnectWorkshop_Day1.pdf) (PDF, 12 MB).
@@ -138,7 +159,7 @@ At the end it prints a summary. If it says *"Everything works"*, you are ready. 
 
 ## Exercises
 
-### Wednesday: denoising, in two parts
+### Wednesday: denoising, in three parts
 
 #### Part 1: solve it with AI (about 30 minutes)
 
