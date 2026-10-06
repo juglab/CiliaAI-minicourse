@@ -144,10 +144,10 @@ Now do it again, step by step, and understand what happens. Choose one of two tr
 
 | Track | What you do | What you need |
 |---|---|---|
-| **Colab** (recommended) | Train Noise2Void on a cloud GPU and look at what it removed. [**Open the notebook in Colab**](https://colab.research.google.com/github/juglab/CiliaAI-minicourse/blob/main/denoising/n2v_colab.ipynb) | A Google account, nothing to install |
+| **Colab** (recommended) | Train Noise2Void on a cloud GPU and look at what it removed. [**Open the notebook in Colab**](https://colab.research.google.com/github/juglab/CiliaAI-minicourse/blob/main/denoising/CAREamics_Noise2Void_2D_ZeroCostDL4Mic.ipynb) | A Google account, nothing to install |
 | **Local** | Denoise with a classical method (BM3D) and with Noise2Void on your laptop, then compare both. Instructions: [`denoising/denoising_exercise.md`](denoising/denoising_exercise.md) | The setup from [Before the course](#before-the-course-get-ready) |
 
-The install step at the top of the Colab notebook takes several minutes. We will ask you to start it early.
+In Colab you upload the image `data/convollaria.tif` from your course folder; the notebook explains how. The install step at the top of the notebook takes several minutes, so we will ask you to start it early.
 
 More exercises will be added. Each one lives in its own folder and comes with step-by-step instructions.
 
@@ -182,7 +182,7 @@ CiliaAI-minicourse/
 │   └── convollaria.tif        example image (2D, 16-bit, 1024 × 1024)
 └── denoising/
     ├── denoising_challenge.md Part 1: solve it with AI
-    ├── n2v_colab.ipynb        Part 2, Colab track
+    ├── CAREamics_Noise2Void_2D_ZeroCostDL4Mic.ipynb  Part 2, Colab track
     ├── denoising_exercise.md  Part 2, local track
     ├── compare_results.py     side-by-side comparison figure
     ├── denoise-bm3d/          BM3D environment + script
