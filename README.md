@@ -21,19 +21,7 @@ Detailed timing is announced on site.
 **Thursday, 8 October**
 
 - Recap: what is the right tool for the job? What should I learn? (FJ, NJY)
-- Segmentation: introduction and tools for 3D (thresholding, Cellpose, ...) (FJ, NJY)
-- Cilia segmentation: CiliaQ, the Q suite and CiliaQ Explorer (NJY, DB)
-- Segmentation projects in groups (DB)
-- Building an analysis pipeline: combining denoising, segmentation and plotting (FJ, NJY, DB)
-- Demonstration: CiliaQ Explorer and ciliation analysis (NJY, DB)
-- Pipeline projects in groups (DB)
-- Presentation of the project outcomes and reflection on the process
-- Evening: pizza, drinks and a debate on how AI influences our work as scientists
-
-**Friday, 9 October (morning)**
-
-- Predicting ciliary protein structures and complexes with AlphaFold: how to trust them (EL)
-- Final words
+- The rest of the program will be announced on site.
 
 Instructors: Florian Jug (FJ), Nathalie Jurisch-Yaksi (NJY), Esben Lorentzen (EL), Daniel Burgdorf (DB).
 
