@@ -2,7 +2,7 @@
 
 Material for the hands-on part of the Cilia-AI / CiliaConnect mini-course on image analysis and AI.
 
-**Before the course,** please follow the steps in [Before the course: get ready](#before-the-course-get-ready) to install everything on your laptop.
+**Before the course,** please choose how you want to work (in the browser or on your own laptop) and get ready as described in [Before the course: get ready](#before-the-course-get-ready).
 
 ## Program
 
@@ -37,20 +37,36 @@ Detailed timing is announced on site.
 
 Instructors: Florian Jug (FJ), Nathalie Jurisch-Yaksi (NJY), Esben Lorentzen (EL), Daniel Burgdorf (DB).
 
-## What you need
-
-- A laptop (macOS, Linux or Windows) with ~5 GB of free disk space.
-- [git](https://git-scm.com/), to download the course material and to get updates during the course.
-- [uv](https://docs.astral.sh/uv/), a fast Python package and project manager. You do **not** need to install Python yourself: uv downloads the right Python version for each exercise.
-- Optional but recommended: [Fiji](https://fiji.sc/) for looking at images.
-- An account for at least one AI assistant (for example ChatGPT, Claude or Gemini). Free accounts are fine.
-- A Google account, for the Colab notebook.
-
 ## Before the course: get ready
 
-Please do these steps **before Wednesday**, at home or in your lab, where the internet is fast. Never used a terminal, git or GitHub? No problem, just follow the steps one by one and copy the commands exactly.
+All you need is a laptop. Beyond that, you can choose how deep you want to go:
 
-### Step 1: Open a terminal
+| | **Colab track** | **Local track** |
+|---|---|---|
+| **What it is** | You run the exercises in your web browser, on Google's computers. | You install the Python tools on your own laptop and run everything there. |
+| **What you install** | Nothing, apart from Fiji (recommended for everyone). | git, uv and the exercise environments (about 5 GB of disk space). |
+| **Good for** | Getting started quickly, without fighting with installations. | Learning how analysis projects work on your own machine, and reusing them after the course. |
+| **Time to get ready** | About 10 minutes. | 30 to 60 minutes, much of it waiting for downloads. |
+
+**Not sure? Choose the Colab track.** All material stays online, so you can still try the local track later.
+
+Please get ready **before Wednesday**, at home or in your lab, where the internet is fast.
+
+### For everyone
+
+1. **Accounts.** A Google account (for Colab) and an account for at least one AI assistant, for example ChatGPT, Claude or Gemini. Free accounts are fine.
+2. **Fiji** (recommended). Download it from [fiji.sc](https://fiji.sc/), unzip it and start it once. We use it to look at images.
+3. **The course material.**
+   - *Colab track:* on the [GitHub page of the course](https://github.com/juglab/CiliaAI-minicourse), click the green *Code* button, then *Download ZIP*. Unzip it somewhere you will find it again.
+   - *Local track:* you download it with git instead, see Step 3 below.
+
+That's it for the Colab track!
+
+### Only for the local track
+
+Never used a terminal, git or GitHub? No problem, just follow the steps one by one and copy the commands exactly.
+
+#### Step 1: Open a terminal
 
 A terminal is a window in which you type commands instead of clicking.
 
@@ -60,7 +76,7 @@ A terminal is a window in which you type commands instead of clicking.
 
 Type a command, then press Enter to run it.
 
-### Step 2: Install git
+#### Step 2: Install git
 
 First check whether git is already installed:
 
@@ -81,7 +97,7 @@ If this prints something like `git version 2.x.x`, go to Step 3. Otherwise:
 
 Then **close the terminal, open a new one** and check again with `git --version`.
 
-### Step 3: Download the course material
+#### Step 3: Download the course material
 
 The course material lives on GitHub, a website that hosts git repositories. Downloading a copy of a repository is called *cloning*. You do not need a GitHub account for this.
 
@@ -103,7 +119,7 @@ Next time you open a terminal, get back into the course folder with:
 cd ~/CiliaAI-minicourse
 ```
 
-### Step 4: Install uv
+#### Step 4: Install uv
 
 ```bash
 # macOS / Linux
@@ -119,7 +135,7 @@ Close and reopen your terminal afterwards, then check with `uv --version`.
 
 Each exercise folder contains one or more small uv projects (a `pyproject.toml` plus a `uv.lock`). Running `uv sync` inside such a folder creates a local `.venv` with exactly the tested package versions.
 
-### Step 5: Check your setup
+#### Step 5: Check your setup
 
 This installs both Python environments of the denoising exercise (several hundred MB, mostly TensorFlow) and tests them. The first run can take 5 to 15 minutes.
 
@@ -145,7 +161,7 @@ Now do it again, step by step, and understand what happens. Choose one of two tr
 | Track | What you do | What you need |
 |---|---|---|
 | **Colab** (recommended) | Train Noise2Void on a cloud GPU and look at what it removed. [**Open the notebook in Colab**](https://colab.research.google.com/github/juglab/CiliaAI-minicourse/blob/main/denoising/CAREamics_Noise2Void_2D_ZeroCostDL4Mic.ipynb) | A Google account, nothing to install |
-| **Local** | Denoise with a classical method (BM3D) and with Noise2Void on your laptop, then compare both. Instructions: [`denoising/denoising_exercise.md`](denoising/denoising_exercise.md) | The setup from [Before the course](#before-the-course-get-ready) |
+| **Local** | Denoise with a classical method (BM3D) and with Noise2Void on your laptop, then compare both. Instructions: [`denoising/denoising_exercise.md`](denoising/denoising_exercise.md) | The [local track setup](#only-for-the-local-track) |
 
 In Colab you upload the image `data/convollaria.tif` from your course folder; the notebook explains how. The install step at the top of the notebook takes several minutes, so we will ask you to start it early.
 
